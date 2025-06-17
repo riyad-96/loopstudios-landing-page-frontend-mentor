@@ -48,7 +48,11 @@
     z-index: 99;
     background-color: black;
     padding-block: 2rem;
-    padding-inline: 1.5rem 2.5rem;
+    padding-inline: 1.5rem;
+    
+    @media(pointer: fine) {
+      padding-inline: 1.5rem 2.5rem;
+    }
   }
   .nav-menu > div:first-child {
     display: flex;
