@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Alata';
+  src: url('./assets/fonts/Alata/alata-v11-latin-regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Josefin-sans';
+  src: url('./assets/fonts/Josefin-Sans/josefin-sans-v32-latin-300.woff2');
+  font-weight: 300;
+}
+
+:root {
+  --fluid-padding: clamp(0.203125rem, -0.0313rem+0.4688vw, 0.390625rem);
+}
+
+@theme {
+  --breakpoint-md: 50rem;
+}
+
+@media (width>=50rem) {
+  .link-hover-effect:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 100%;
+
+    border-radius: 1rem;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 300ms;
+  }
+
+  .link-hover-effect:hover:before {
+    width: 25px;
+  }
+}
+
+@media (width < 50rem) {
+  .nav-menu.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    inset: 0;
+    z-index: 99;
+    background-color: black;
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+  }
+  .nav-menu > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-menu > div:last-child {
+    height: calc(100% - 4rem);
+    display: grid;
+    align-items: center;
+
+    > div {
+      display: grid;
+      gap: 0.225rem;
+    }
+
+    a {
+      font-family: 'josefin-sans';
+      font-size: 2rem;
+      padding-block: 0.325rem;
+      width: 100%;
+    }
+  }
+
+  .nav-menu.nav-menu.show {
+    display: block;
+  }
+}

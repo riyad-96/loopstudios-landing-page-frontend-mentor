@@ -1,0 +1,21 @@
+{
+  "name": "loop-studio-landing-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 9999",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev-host": "vite --host --port 9999"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "tailwindcss": "^4.1.10"
+  }
+}
