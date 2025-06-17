@@ -48,7 +48,7 @@
     z-index: 99;
     background-color: black;
     padding-block: 2rem;
-    padding-inline: 1.5rem;
+    padding-inline: 1.5rem 2.5rem;
   }
   .nav-menu > div:first-child {
     display: flex;
@@ -76,4 +76,14 @@
   .nav-menu.nav-menu.show {
     display: block;
   }
+}
+
+
+.devNote {
+  display: none;
+  transition-property: display
+}
+
+.devNote.show {
+  display: grid;
 }

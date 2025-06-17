@@ -37,7 +37,7 @@
               </div>
             </nav>
 
-            <button class="nav-menu-show-btn h-[41px] w-[42px] md:hidden grid place-items-center rounded-full p-2">
+            <button class="nav-menu-show-btn grid h-[41px] w-[42px] place-items-center rounded-full p-2 md:hidden">
               <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
                 <g fill="currentColor" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" /></g>
               </svg>
@@ -153,7 +153,20 @@
             <span class="text-center text-sm tracking-[1px] opacity-60">&copy; 2021 Loopstudios. All rights reserved.</span>
           </div>
         </div>
+
+        <div class="grid gap-4 pt-16">
+          <p class="text-center text-base tracking-[0.3px] text-white/60">Challenge by <a class="font-extrabold text-white underline-offset-2 hover:underline" href="https://frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded by <a class="font-extrabold text-white underline-offset-2 hover:underline" href="https://github.com/riyad-96/" target="_blank">Riyad</a>.</p>
+          <button class="devNote-btn mx-auto block w-fit border px-6 py-1 pt-2 pb-1 font-[josefin-sans] text-base font-bold transition-colors hover:bg-white hover:text-black [@media(pointer:fine)]:cursor-pointer">DevNote</button>
+        </div>
       </footer>
+    </div>
+
+    <!-- ----- -->
+    <div class="devNote fixed inset-0 z-5 grid place-items-center bg-black/30 px-6 [@media(pointer:fine)]:backdrop-blur-[3px]">
+      <div class="devNote-content grid w-full max-w-[450px] gap-6 bg-white p-6 text-start shadow-md">
+        <span>I'm excited to share my personal code editor! Built with care and curiosity, this was a chance to explore something new. The core editor is powered by the popular CodeMirror library.</span>
+        <a class="w-fit border px-8 pt-2 pb-1 font-[josefin-sans] uppercase transition-colors hover:border-black hover:bg-black hover:text-white" href="https://zero-ide.vercel.app" target="_blank">Try it</a>
+      </div>
     </div>
   </body>
 </html>
